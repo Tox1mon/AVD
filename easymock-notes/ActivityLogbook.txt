@@ -11,8 +11,10 @@ Eventuell sollten wir hier lieber viele kleine Klassen mit wenig Methoden nutzen
 - Einrichtung eines einfachen SVN Repositories bei xp-dev.com. 
 Hierbei festfestellt, dass beim SVN Checkin der Nutzername case-sensitive ausgewertet wird, im Web-Frontend aber case-insensitive. Ansonsten geht sich das gut an.
 Dieses Repository for das Demo- und das Notes-Projekt benutzt.
+- Erstes Beispiel für Partial Mocking durchimplementiert. Es funktioniert ad hoc
 
 
 TODO:
 - Drüber nachdenken, wie die Nomenklatur (Delegate, Class under Test, Demo, Testcase, Demotestcase)
 - Vielleicht doch mal schauen, ob ich irgendwo ein kostenloses GIT- oder Mercurial-Repo finde. Vielleicht deswegen mal Hans-Peter fragen, der hat sowas wahrscheinlich schon.
+- Partial Mocking weiter durchprobieren, um zu zeigen, dass das auch mit Constructor injection funktioniert.
