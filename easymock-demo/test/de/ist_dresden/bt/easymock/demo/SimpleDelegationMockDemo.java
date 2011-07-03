@@ -1,7 +1,6 @@
 package de.ist_dresden.bt.easymock.demo;
 
 import org.easymock.EasyMock;
-import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -10,26 +9,10 @@ import org.junit.Test;
  * 
  * @author bjoern
  */
-public class SimpleDelegationMockDemo {
+public class SimpleDelegationMockDemo extends AbstractDelegationMockDemo {
 
 	/** Ein einfacher String. */
 	private static final String HELLO_WORLD = "Hello, World";
-
-	/** Class under Test. */
-	private ClassUnderTest classUnderTest;
-
-	/** Mock Delegate. */
-	private ClassToDelegateTo classToDelegateTo;
-
-	/**
-	 * Initialisiere die Class under Test und alle Mocks/Delegates.
-	 */
-	@Before
-	public void init() {
-		classToDelegateTo = EasyMock.createMock(ClassToDelegateTo.class);
-		classUnderTest = new ClassUnderTest();
-		classUnderTest.setClassToDelegate(classToDelegateTo);
-	}
 
 	/**
 	 * Prüfe, dass die Methode {@link ClassToDelegateTo#methodToDelegateTo()}

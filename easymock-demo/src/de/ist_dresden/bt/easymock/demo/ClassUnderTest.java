@@ -11,12 +11,19 @@ public class ClassUnderTest {
 	 * Klasse, an welche manche Dinge delegiert werden.
 	 */
 	private ClassToDelegateTo classToDelegateTo;
-	
+
 	/**
-	 * Methode, welche getestet werden soll.
+	 * Methode, welche an eine Methode mit RŸckgabewert delegiert.
 	 */
 	public void methodUnderTest() {
 		classToDelegateTo.methodToDelegateTo();
+	}
+
+	/**
+	 * Methode, welche an eine Methode ohne RŸckgabewert delegiert.
+	 */
+	public void methodUnderTestWithVoidDelegateMethod() {
+		classToDelegateTo.methodToDelegateToWithNoReturnValue();
 	}
 
 	/**
