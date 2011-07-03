@@ -1,0 +1,18 @@
+2.7.2011.
+- Ersten Testcase für einfache Delegierung und Testen mit EasyMock geschrieben.
+Das wäre dann die Demo für EasyMock.expect(...) mitsamt EasyMock.replay(...) und EasyMock.verify(...) und EasyMock.createMock(...) auf Basis eines Delegate Interfaces. Einfache Setter-DI wird hier zur Demo genutzt.
+
+3.7.2011
+- Zweiter Testcase: Dasselbe wie der erste, aber kein Rückgabewert in der  Methode, an welche delegiert wird.
+Dadurch muss EasyMock.expectLastCall verwendet werden.
+- Außerdem das Setup der Class under Test und der DelegateClass in eine abstrakte Superklasse verschoben, um mich ganz auf die Demo Testcases in den konkreten Testfällen konzentrieren zu können.
+Problem hierbei: Die Methoden sind alle in einer Klasse, brauchen also alle irgendwelche Namen (das Benamungsproblem hätte man auch auf Klassenebene schieben können, damit die Klassen nicht zu groß werden.
+Eventuell sollten wir hier lieber viele kleine Klassen mit wenig Methoden nutzen statt einer großen mit vielen Methoden, allerdings entsteht dadurch insgesamt mehr Kode.
+- Einrichtung eines einfachen SVN Repositories bei xp-dev.com. 
+Hierbei festfestellt, dass beim SVN Checkin der Nutzername case-sensitive ausgewertet wird, im Web-Frontend aber case-insensitive. Ansonsten geht sich das gut an.
+Dieses Repository for das Demo- und das Notes-Projekt benutzt.
+
+
+TODO:
+- Drüber nachdenken, wie die Nomenklatur (Delegate, Class under Test, Demo, Testcase, Demotestcase)
+- Vielleicht doch mal schauen, ob ich irgendwo ein kostenloses GIT- oder Mercurial-Repo finde. Vielleicht deswegen mal Hans-Peter fragen, der hat sowas wahrscheinlich schon.
