@@ -20,4 +20,4 @@ Dieses Repository for das Demo- und das Notes-Projekt benutzt.
 TODO:
 - Drüber nachdenken, wie die Nomenklatur (Delegate, Class under Test, Demo, Testcase, Demotestcase) am klarsten ist.
 - Vielleicht doch mal schauen, ob ich irgendwo ein kostenloses GIT- oder Mercurial-Repo finde. Vielleicht deswegen mal Hans-Peter fragen, der hat sowas wahrscheinlich schon.
-- Partial Mocking weiter durchprobieren, um zu zeigen, dass das auch mit Constructor injection funktioniert.
+- Partial Mocking weiter durchprobieren, um zu schauen, ob man das mit dem String-Literal in dem addMockedMethod(String)-Aufruf nicht refactoring-sicher lösen kann.
